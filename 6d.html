@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function checking()
+            {
+                var a=document.getElementById("first").value;
+                var b=parseInt(document.getElementById("second").value);
+            if(b>18)
+            {
+                documnet.write(a+"is eligible for voting");
+            }
+            else
+            {
+                document.write(a+"is not eligible for voting");
+            }
+            }
+        </script>
+
+    </head>
+    <body>
+        <label>name</label>
+        <input type="text"id="first">
+        <label>age</label>
+        <input type="number" id="second">
+        <input type="button" value="check" onclick="checking();">
+
+    </body>
+</html>

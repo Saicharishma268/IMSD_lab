@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color:green;
+            }
+            .star
+            {
+                color:red;
+            }
+            #clean
+            {
+                color:blue;
+            }
+            h1,h2,h3
+            {
+               font-family:Arial, Helvetica, sans-serif;
+            }
+            *
+            {
+                font-weight: bold;
+            }
+
+
+           
+
+            div p:first-child{
+                color:red;
+                font-style: italic;
+                
+            }
+            div p:last-child{
+                color:brown;
+            }
+
+
+
+            p::before{
+                content:"sai ";
+            }
+            p::first-letter{
+                color:red;
+            }
+
+
+            input[type="text"]
+            {
+                border-color:blueviolet;
+            }
+            a[href^="https"]
+            {
+                color:darkblue;
+            }
+
+
+
+
+
+            
+            
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>sai charishma</h1>
+        <h2 class="star">akki</h2>
+        <h2 id="clean">liki</h2>
+
+        <div>
+            <p>this is inside the div</p>
+            <p>this is second child of class</p>
+            <section> <p> this is not direct children of div</p></section>
+        </div>
+        <p> this is outside the div</p>
+        <input type="text" name="name">
+        <a href="#">text</a>
+
+
+    </body>
+</html>
