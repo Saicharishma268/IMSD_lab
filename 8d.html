@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+         welcome
+        </title>
+        <script>
+let student = {
+    name: "Alice",
+    age: 21,
+    course: "Computer Science"
+};
+
+// 1. Using for-in loop 
+for (let key in student) {
+    document.write(key + ": " + student[key]+" ");
+}
+
+// 2. Using forEach loop 
+Object.keys(student).forEach(function(key) {
+    document.write(key + ": " + student[key]+" ");
+});
+
+// 3. Using for-of loop
+for (let [key, value] of Object.entries(student)) {
+    document.write(key + ": " + value+" ");
+}
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

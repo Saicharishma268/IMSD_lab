@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            welcome
+        </title>
+        <script>
+            function show()
+            {
+                let a =window.prompt("enter a number");
+                let b=1;
+                while(a>=1)
+            {
+                 b=b*a;
+                 a--;
+            }
+            document.write("Factorial of  the given number is "+parseInt(b));
+            
+            }
+
+            function display()
+            {
+                let a=window.prompt("enter the number");
+                let b=0;
+                let c=1;
+                while(b<=a)
+            {
+                document.write(b+" ");
+                let d=b+c;
+                b=c;
+                c=d;
+               
+
+            }
+            }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="display();">fibonacci</button>
+        <button onclick="show();">factorial</button>
+
+    </body>
+</html>
